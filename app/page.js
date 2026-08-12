@@ -17,6 +17,18 @@ const projects = [
   },
   {
     number: "02",
+    name: "CinePulse",
+    type: "Product",
+    status: "Prototype",
+    description:
+      "An adaptive, local-first movie discovery system that learns from ratings, reactions, watch history, genres, moods, recency, and exploration preferences.",
+    tags: ["JavaScript", "Recommendation ML", "Local-first", "Responsive UI"],
+    href: "https://github.com/thacanadian/cinepulse",
+    cta: "View source",
+    visual: "cinepulse",
+  },
+  {
+    number: "03",
     name: "LeadsAI",
     type: "Product",
     status: "Case study",
@@ -28,7 +40,7 @@ const projects = [
     visual: "leads",
   },
   {
-    number: "03",
+    number: "04",
     name: "AeroDetail OS",
     type: "Software",
     status: "v2.1.4",
@@ -40,7 +52,7 @@ const projects = [
     visual: "operations",
   },
   {
-    number: "04",
+    number: "05",
     name: "Neon City",
     type: "Game",
     status: "Experiment",
@@ -52,7 +64,7 @@ const projects = [
     visual: "city",
   },
   {
-    number: "05",
+    number: "06",
     name: "Slice-to-Fit",
     type: "Game",
     status: "Prototype",
@@ -64,7 +76,7 @@ const projects = [
     visual: "slice",
   },
   {
-    number: "06",
+    number: "07",
     name: "Gravity Shift",
     type: "Game",
     status: "Playable",
@@ -76,7 +88,7 @@ const projects = [
     visual: "gravity",
   },
   {
-    number: "07",
+    number: "08",
     name: "Apex Aircraft Care",
     type: "Venture",
     status: "Launching",
@@ -114,6 +126,19 @@ function ProjectVisual({ kind }) {
         <div className="rings"><i /><i /><i /></div>
         <div className="metric"><b>2,340</b><small>KCAL TRACKED</small></div>
         <div className="chart"><i/><i/><i/><i/><i/><i/><i/></div>
+      </div>
+    );
+  }
+  if (kind === "cinepulse") {
+    return (
+      <div className="visual cinepulse-visual">
+        <span className="cinepulse-label">YOUR TASTE / LIVE</span>
+        <div className="cinepulse-screen">
+          <div className="cinepulse-orb"><i>▶</i></div>
+          <b>94% MATCH</b>
+          <div className="cinepulse-wave"><i/><i/><i/><i/><i/><i/><i/></div>
+        </div>
+        <p>MOVIES THAT GET YOU</p>
       </div>
     );
   }
