@@ -7,10 +7,10 @@ const projects = [
     number: "01",
     name: "FormForge",
     type: "Product",
-    status: "Building",
+    status: "v1.8.0",
     description:
-      "A personal fitness operating system that brings training, nutrition, progress, and AI-assisted coaching into one focused mobile experience.",
-    tags: ["React", "Product Design", "Local Storage", "AI"],
+      "A privacy-focused, local-first, multi-user fitness operating system for training, nutrition, recovery, progress, encrypted backups, and AI-assisted coaching.",
+    tags: ["Go", "PWA", "Local-first", "Security"],
     href: "https://github.com/thacanadian/Formforge",
     cta: "View source",
     visual: "fitness",
@@ -307,7 +307,7 @@ export default function Home() {
             </div>
           </div>
           <div className="capabilities reveal">
-            <span>JavaScript</span><span>React</span><span>HTML / CSS</span><span>Product Thinking</span><span>AI Workflows</span><span>CRM Systems</span><span>Operations</span><span>Sales</span><span>Git</span><span>Leadership</span>
+            <span>Go</span><span>JavaScript</span><span>React</span><span>HTML / CSS</span><span>Product Thinking</span><span>AI Workflows</span><span>CRM Systems</span><span>Operations</span><span>Sales</span><span>Git</span><span>Leadership</span>
           </div>
         </div>
       </section>
