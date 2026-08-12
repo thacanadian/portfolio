@@ -4,7 +4,13 @@
 
 ![Noah Krynicki portfolio cover](docs/portfolio-cover.svg)
 
-Personal portfolio for Noah Krynicki, a DFW-based builder and founder working across software, systems, and business.
+Personal portfolio for Noah Krynicki, a DFW-based builder and founder working across software, systems, sales, operations, and zero-to-one business building.
+
+## Live site
+
+**Portfolio:** https://noahkrynicki-portfolio-noahwkry-5549s-projects.vercel.app
+
+The site highlights selected projects, a deeper Apex Aircraft Care founder case study, practical leadership/operations experience, and direct links to public source or public-safe project documentation.
 
 ## Contact
 
@@ -28,4 +34,4 @@ npm run build
 npm start
 ```
 
-Built with Next.js and React. The project uses a static export so it can be hosted on Vercel, Netlify, GitHub Pages, or any static web host.
+Built with Next.js and React. The repository is the maintainable source version of the portfolio; the production host may use an equivalent static deployment bundle for reliability.
