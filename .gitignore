@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+dist
+.DS_Store
+npm-debug.log*
+.env*
+next-env.d.ts
