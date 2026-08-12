@@ -105,6 +105,12 @@ svg { width: 100%; height: 100%; }
 .cut-line { position:absolute; width:280px; height:2px; background:#f1bb5d; left:33px; top:195px; transform:rotate(-25deg); box-shadow:0 0 16px #f1bb5d; z-index:3; }
 .cutout { position:absolute; width:98px; height:145px; right:54px; top:82px; border:4px solid #d6a55c; border-radius:48%; transform:rotate(14deg); box-shadow:0 0 28px #d6a55c55; }.cutout span{position:absolute;inset:13px;border:1px dashed #d6a55c}
 .slice-visual p { position:absolute; left:29px; bottom:24px; color:#d6a55c; font-size:8px; letter-spacing:.2em; }
+.gravity-visual { background: radial-gradient(circle at 72% 36%, rgba(125,234,255,.2), transparent 32%), linear-gradient(145deg,#0a0e1c,#171f3b); }
+.gravity-board { position:absolute; width:230px; height:230px; left:50%; top:50%; transform:translate(-50%,-55%) rotate(7deg); border:3px solid #4f6086; border-radius:20px; background:#0d152b; box-shadow:0 20px 60px rgba(0,0,0,.35); }
+.gravity-board::before,.gravity-board::after { content:""; position:absolute; background:#2b3a62; }.gravity-board::before{width:100px;height:32px;left:22px;top:24px}.gravity-board::after{width:34px;height:115px;right:28px;bottom:25px}
+.gravity-player { position:absolute; width:34px; height:34px; border-radius:50%; background:#c2fbff; border:6px solid #5edbed; left:42px; bottom:55px; box-shadow:0 0 20px #5edbed; z-index:2; }
+.gravity-arrow { position:absolute; left:48px; bottom:100px; color:#7deaff; font-size:35px; z-index:2; }.gravity-hazard{position:absolute;left:122px;top:96px;color:#ff5878;font-size:42px;transform:rotate(45deg);z-index:2}.gravity-board em{position:absolute;right:22px;top:22px;color:#ffd85e;font-size:27px;font-style:normal;z-index:2}
+.gravity-visual > p { position:absolute; left:28px; bottom:24px; color:#8eeaf6; font-size:8px; letter-spacing:.2em; }
 .apex-visual { background: linear-gradient(150deg, #172a37, #0d171e); display: grid; place-items: center; text-align: center; }
 .apex-visual::before { content:""; position:absolute; inset:20px; border:1px solid rgba(199,157,87,.25); }
 .apex-visual p { font: 37px Georgia,serif; letter-spacing:.08em; color:#d4b06c; z-index:2; }.apex-visual p span{display:block;font:8px Arial;letter-spacing:.5em;margin-top:7px;color:#e8e2d5}
