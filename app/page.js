@@ -17,38 +17,62 @@ const projects = [
   },
   {
     number: "02",
+    name: "LeadsAI",
+    type: "Product",
+    status: "Case study",
+    description:
+      "A cross-platform lead discovery, outreach, and sales-pipeline system designed to give small businesses one focused prospecting workspace.",
+    tags: ["TypeScript", "React Native", "Electron", "APIs"],
+    href: "https://github.com/thacanadian/LeadsAI",
+    cta: "View case study",
+    visual: "leads",
+  },
+  {
+    number: "03",
     name: "AeroDetail OS",
     type: "Software",
     status: "v2.1.4",
     description:
       "A secure aircraft-detailing sales and operations system with lead research, CRM, quoting, job workflows, client records, team access, and encrypted backups.",
     tags: ["Python", "JavaScript", "Security", "Operations"],
-    href: "#contact",
-    cta: "Private system",
-    visual: "leads",
+    href: "https://github.com/thacanadian/AeroDetail-OS",
+    cta: "View case study",
+    visual: "operations",
   },
   {
-    number: "03",
+    number: "04",
     name: "Neon City",
     type: "Game",
     status: "Experiment",
     description:
       "A browser-based open-world game experiment with driving, missions, police AI, weapons, progression, and a living city sandbox.",
     tags: ["JavaScript", "Game Systems", "Canvas", "AI Behavior"],
-    href: "#contact",
-    cta: "Build in progress",
+    href: "https://github.com/thacanadian/Neon-City",
+    cta: "View source",
     visual: "city",
   },
   {
-    number: "04",
+    number: "05",
+    name: "Slice-to-Fit",
+    type: "Game",
+    status: "Prototype",
+    description:
+      "A self-contained browser game about slicing objects into the right shape, managing limited attempts, and launching pieces through moving cutouts.",
+    tags: ["JavaScript", "Canvas", "Touch", "Game Design"],
+    href: "https://github.com/thacanadian/Slice-to-Fit",
+    cta: "View source",
+    visual: "slice",
+  },
+  {
+    number: "06",
     name: "Apex Aircraft Care",
     type: "Venture",
     status: "Launching",
     description:
       "A DFW aircraft appearance company built from the ground up—from positioning and unit economics to operations, outreach, CRM systems, and service standards.",
     tags: ["Founder", "Operations", "Sales Systems", "Brand"],
-    href: "#contact",
-    cta: "Venture overview",
+    href: "https://github.com/thacanadian/Apex-Aircraft-Care",
+    cta: "View case study",
     visual: "apex",
   },
 ];
@@ -98,6 +122,26 @@ function ProjectVisual({ kind }) {
         <div className="building b1" /><div className="building b2" /><div className="building b3" />
         <div className="road"><span /></div>
         <p>HEAT <b>● ● ● ○ ○</b></p>
+      </div>
+    );
+  }
+  if (kind === "operations") {
+    return (
+      <div className="visual operations-visual">
+        <span>OPERATIONS / LIVE</span>
+        <div className="ops-card"><small>ACTIVE PIPELINE</small><b>24</b><i>+18%</i></div>
+        <div className="ops-grid"><i /><i /><i /><i /><i /><i /></div>
+        <p>LEADS&nbsp;&nbsp; QUOTES&nbsp;&nbsp; JOBS&nbsp;&nbsp; CLIENTS</p>
+      </div>
+    );
+  }
+  if (kind === "slice") {
+    return (
+      <div className="visual slice-visual">
+        <span className="cut-line" />
+        <i className="slice-piece one" /><i className="slice-piece two" />
+        <div className="cutout"><span /></div>
+        <p>SLICE · SELECT · LAUNCH</p>
       </div>
     );
   }
