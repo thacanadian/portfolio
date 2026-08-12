@@ -65,6 +65,18 @@ const projects = [
   },
   {
     number: "06",
+    name: "Gravity Shift",
+    type: "Game",
+    status: "Playable",
+    description:
+      "A self-contained physics puzzle game with eight chambers, directional gravity, star ratings, responsive controls, and local progression.",
+    tags: ["JavaScript", "Canvas", "Physics", "Mobile"],
+    href: "https://github.com/thacanadian/gravity-shift-game",
+    cta: "View source",
+    visual: "gravity",
+  },
+  {
+    number: "07",
     name: "Apex Aircraft Care",
     type: "Venture",
     status: "Launching",
@@ -142,6 +154,19 @@ function ProjectVisual({ kind }) {
         <i className="slice-piece one" /><i className="slice-piece two" />
         <div className="cutout"><span /></div>
         <p>SLICE · SELECT · LAUNCH</p>
+      </div>
+    );
+  }
+  if (kind === "gravity") {
+    return (
+      <div className="visual gravity-visual">
+        <div className="gravity-board">
+          <i className="gravity-player" />
+          <span className="gravity-arrow">↑</span>
+          <b className="gravity-hazard">◆</b>
+          <em>★</em>
+        </div>
+        <p>SHIFT GRAVITY · CLEAR THE CHAMBER</p>
       </div>
     );
   }
