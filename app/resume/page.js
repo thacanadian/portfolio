@@ -31,43 +31,19 @@ export default function Resume() {
           boxShadow: "0 20px 70px rgba(16,22,27,.12)",
         }}
       >
-        <nav
-          className="resumeActions"
-          aria-label="Résumé actions"
-          style={{ display: "flex", justifyContent: "space-between", gap: 20 }}
-        >
-          <a href="/" style={{ fontSize: 12, letterSpacing: ".12em" }}>
-            ← PORTFOLIO
-          </a>
-          <button
-            type="button"
-            onClick={() => window.print()}
-            style={{
-              border: 0,
-              background: "transparent",
-              cursor: "pointer",
-              fontSize: 12,
-              letterSpacing: ".12em",
-            }}
-          >
+        <nav className="resumeActions" aria-label="Résumé actions" style={{ display: "flex", justifyContent: "space-between", gap: 20 }}>
+          <a href="/" style={{ fontSize: 12, letterSpacing: ".12em" }}>← PORTFOLIO</a>
+          <button type="button" onClick={() => window.print()} style={{ border: 0, background: "transparent", cursor: "pointer", fontSize: 12, letterSpacing: ".12em" }}>
             PRINT / SAVE PDF ↓
           </button>
         </nav>
 
         <header style={{ borderBottom: "2px solid #10161b", paddingBottom: 24, marginBottom: 26 }}>
-          <h1
-            style={{
-              fontFamily: "Georgia, serif",
-              fontSize: "clamp(42px,7vw,72px)",
-              fontWeight: 400,
-              letterSpacing: "-.04em",
-              margin: "22px 0 8px",
-            }}
-          >
+          <h1 style={{ fontFamily: "Georgia, serif", fontSize: "clamp(42px,7vw,72px)", fontWeight: 400, letterSpacing: "-.04em", margin: "22px 0 8px" }}>
             Noah Krynicki
           </h1>
           <p style={{ margin: "0 0 12px", color: "#596166" }}>
-            Operations · Customer Success · Product Systems · Business Development
+            Product · Technical Operations · Business Systems · Customer Success
           </p>
           <p style={{ margin: 0, fontSize: 13, lineHeight: 1.7 }}>
             Fort Worth / DFW, Texas · <a href="mailto:noahwkry@gmail.com">noahwkry@gmail.com</a> ·{" "}
@@ -79,65 +55,68 @@ export default function Resume() {
         <section>
           <h2 style={headingStyle}>Profile</h2>
           <p style={bodyStyle}>
-            Operations leader and product builder who turns rough ideas and messy workflows into clear,
-            usable systems. Experience leading high-volume service teams, training 25+ teammates, building
-            customer and sales workflows, and shipping software across Go, JavaScript, and React.
+            Product-minded builder and operations leader with hands-on experience shipping software, validating products with real beta users, building CRM and business systems, and leading high-volume teams. Combines Go and JavaScript product work with customer operations, training, business development, and zero-to-one execution.
           </p>
         </section>
 
         <section style={sectionStyle}>
-          <h2 style={headingStyle}>Experience</h2>
+          <h2 style={headingStyle}>Selected Technical Work</h2>
+
+          <h3 style={jobStyle}>FormForge v1.8.0 — Product Builder / Developer · Go / PWA</h3>
+          <p style={bodyStyle}>
+            Built a privacy-focused, multi-user fitness operating system spanning training, nutrition, recovery, progress tracking, encrypted backups, and AI-assisted coaching. Recruited 20+ beta testers for real-world product validation and feedback, with documented architecture, security, testing, and beta metrics.
+          </p>
+
+          <h3 style={jobStyle}>CinePulse — Creator / Developer · JavaScript</h3>
+          <p style={bodyStyle}>
+            Built a responsive, local-first movie recommendation system using ratings, reactions, watch history, mood and genre signals, similarity, recency weighting, exploration, and diversity reranking.
+          </p>
+
+          <h3 style={jobStyle}>AeroDetail OS + LeadsAI — Product / Operations Systems</h3>
+          <p style={bodyStyle}>
+            Designed CRM, prospecting, outreach, quoting, job, client-record, and workflow systems connecting software design with practical sales and operating needs.
+          </p>
+        </section>
+
+        <section style={sectionStyle}>
+          <h2 style={headingStyle}>Professional Experience</h2>
+
+          <h3 style={jobStyle}>Apex Aircraft Care — Founder (Pre-launch Venture) · 2026–Present</h3>
+          <p style={bodyStyle}>
+            Built a DFW aviation-service venture from concept through brand, market research, service positioning, pricing and unit economics, CRM structure, prospecting strategy, sales messaging, SOPs, and go-to-market systems. Translated operating requirements into documented workflows and internal software requirements.
+          </p>
 
           <h3 style={jobStyle}>Andy’s Frozen Custard — Manager · 2025–Present</h3>
           <p style={bodyStyle}>
-            Lead shifts of 4–7, coordinate customer flow and operating priorities, resolve service issues,
-            and train teammates in a high-volume environment serving hundreds of guests each day.
+            Lead shifts of 4–7, coordinate customer flow and operating priorities, resolve service issues, support day-to-day operations, and train teammates in a high-volume environment.
           </p>
 
           <h3 style={jobStyle}>Raising Cane’s — Trainer · 2025–2026</h3>
           <p style={bodyStyle}>
-            Promoted to Trainer and onboarded 20+ teammates across customer-service and kitchen operations
-            while maintaining quality and pace during busy shifts.
-          </p>
-
-          <h3 style={jobStyle}>Apex Aircraft Care — Founder · 2026–Present</h3>
-          <p style={bodyStyle}>
-            Building a pre-launch DFW aircraft-care venture: brand and market research, service positioning,
-            pricing and unit-economics work, prospecting and CRM systems, sales messaging, operating
-            procedures, safety/compliance research, and an internal workflow application.
-          </p>
-
-          <h3 style={jobStyle}>Independent Projects — Product Builder · Ongoing</h3>
-          <p style={bodyStyle}>
-            Ship and document software products and prototypes, including FormForge, CinePulse, LeadsAI,
-            AeroDetail OS, Neon City, Slice-to-Fit, and Gravity Shift.
+            Promoted to Trainer and onboarded 20+ teammates across customer-service and kitchen operations while maintaining quality and pace during busy shifts.
           </p>
         </section>
 
         <section style={sectionStyle}>
-          <h2 style={headingStyle}>Selected Projects</h2>
+          <h2 style={headingStyle}>Education & Credentials</h2>
           <p style={bodyStyle}>
-            <strong>FormForge:</strong> Local-first, multi-user fitness operating system built with Go and
-            progressive-web-app patterns. <strong>CinePulse:</strong> Adaptive JavaScript movie recommender
-            using profile signals, similarity scoring, recency weighting, and diversity reranking.{" "}
-            <strong>LeadsAI / AeroDetail OS:</strong> Public-safe case studies in prospecting, CRM, outreach,
-            quoting, and operations workflows.
+            <strong>Bachelor of Business Administration</strong> — Western Governors University (WGU), Expected May 2028<br />
+            <strong>Texas Real Estate Sales Agent Licensing</strong> — In Progress<br />
+            <strong>High School Diploma</strong> — May 2026 · Dual-enrollment and CS50 coursework
           </p>
         </section>
 
         <section style={sectionStyle}>
-          <h2 style={headingStyle}>Leadership & Education</h2>
+          <h2 style={headingStyle}>Leadership</h2>
           <p style={bodyStyle}>
-            Led group teachings for 50+ students; experience across theater, music, live production, and
-            technical operations. High School Diploma, May 2026; dual-enrollment and CS50 coursework.
+            Led group teachings for 50+ students; experience across 16+ theater productions, music, live production, and technical operations.
           </p>
         </section>
 
         <section style={sectionStyle}>
           <h2 style={headingStyle}>Skills</h2>
           <p style={bodyStyle}>
-            Team leadership · Training · Customer experience · Operations · CRM and prospecting · Business
-            development · Go · JavaScript · React · HTML/CSS · Git · Product thinking · AI-assisted workflows
+            Go · JavaScript · React · TypeScript · Python · HTML/CSS · Git/GitHub · Progressive Web Apps · Local-first systems · Testing · Product documentation · CRM · Prospecting · Customer onboarding · Business development · AI-assisted workflows
           </p>
         </section>
       </article>
