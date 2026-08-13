@@ -1,4 +1,7 @@
 import "./globals.css";
+import "lenis/dist/lenis.css";
+import "./motion.css";
+import SmoothMotion from "./SmoothMotion";
 
 export const metadata = {
   title: "Noah Krynicki — Operations, Product & Business Development",
@@ -23,7 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SmoothMotion />
+        {children}
+      </body>
     </html>
   );
 }
