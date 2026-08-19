@@ -1,6 +1,7 @@
 import "./globals.css";
 import "lenis/dist/lenis.css";
 import "./motion.css";
+import "./launch.css";
 import SmoothMotion from "./SmoothMotion";
 import Analytics from "./Analytics";
 
